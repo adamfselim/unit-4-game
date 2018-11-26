@@ -1,0 +1,109 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Crystals Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="./assets/css/reset.css"> 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/style.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+    </head>
+    <body>
+        <div class="container myContainer">
+
+    		
+    		<div class="row">
+    				<div class="col-md-3 col-sm-3 col-xs-3">
+    				</div>
+		      				
+	    			<div class="col-md-9 col-sm-9 col-xs-9 page-header myPageHeader">
+	    				<h1>This is a game with crystals</h1></h1T></h1>
+	    			</div>
+	    	</div>
+	    		
+    		<div class="row">
+    			<div class="col-md-3 col-sm-3 col-xs-3">
+    			</div>
+    			<div  class="col-md-9 col-sm-9 col-xs-9 jumbotron" id="myJumbotron">
+    				<div id="directions">
+		    			<p>
+	    					A random number will be generated.
+	    				</p>
+	    				<p>
+	    					Each of the four crystals will add points to your total that is randomly generated.
+						</p>
+						<p>
+							The game is won once you match the generated number and lost if you go over.
+						</p>
+						<p>
+							The value of the crystals is unknown.
+						</p>
+						<p>
+							The crystal's value will change each game.
+						</p>
+					</div>
+    			</div>
+    			
+    		</div> 
+    		<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-3">
+	    		</div>
+	    		<div class="col-md-6 col-sm-6 col-xs-6 panel panel-default panel-body" id="gameRandomBox">
+	    				<span id="num2Guess"> </span>
+	    		</div>
+	    		<div class="col-md-3 col-sm-3 col-xs-3">
+	    			<div class="row"> 
+	    				<div class="col-md-12 col-sm-12 col-xs-6 panel panel-default panel-body statsBox" id="winsBox">
+	    					<span class="statsNum" id="numWins"> </span>
+	    				</div>
+	    			</div>
+	    			<div class="row"> 
+	    				<div class="col-md-12 col-sm-12 col-xs-6 panel panel-default panel-body statsBox">
+	    					<span class="statsNum" id="numLosses"> </span>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div> 
+	    	<div class="row">
+	    		<div class="col-md-3 col-sm-3 col-xs-3">
+	    		</div>
+	    		<div class="col-md-6 col-sm-6 cos-xs-6">
+	    			<div class="row"> 
+						<div class="col-md-3 col-xs-3 col-xm-3 leftJustify">
+		        			<img class="img-responsive  gemstone" id="amethyst" value="amethyst" src="./assets/images/amethyst.png" alt="amethyst">
+	  					</div>
+	  					<div class="col-md-3 col-xs-3 col-xm-3">
+		        				<img class="img-responsive gemstone" id="emerald" value="emerald" src="./assets/images/emerald.png" height="450px" width="450px" alt="emerald">
+	  					</div>
+		 				<div class="col-md-3 col-xs-3 col-xm-3">
+		        				<img class="img-responsive gemstone" id="ruby" value="ruby" src="./assets/images/ruby.png" alt="ruby">
+		  				</div>
+		  				<div class="col-md-3 col-xs-3 col-xm-3">
+		        				<img class="img-responsive gemstone" id="sapphire" value="sapphire" src="./assets/images/Sapphire.png" alt="sapphire">
+		  				</div>
+		  			</div>
+	    		</div>
+			</div> 
+
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-3">
+	    		</div>
+	    		<div class="col-md-6 col-sm-6 cos-xs-6 leftJustify">
+	    			<div class="panel panel-heading myPanel">
+    						<span class="panel-title statsNum">Your Total Score Is: </span>
+  					</div>
+  					<div class="panel-body myPanel">
+    						<span class="statsNum" id="userScore"> </span>
+  					</div>
+				</div>
+			</div> 	
+		</div>     
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="./assets/javascript/game.js"></script>
+    </body>
+</html>
